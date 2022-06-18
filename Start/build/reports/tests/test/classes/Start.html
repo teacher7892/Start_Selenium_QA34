@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Start</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Start</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Start</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">21.206s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="start"></a>
+<h3 class="failures">start</h3>
+<span class="code">
+<pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'MacBook-Air-Oksana.local', ip: 'fe80:0:0:0:1c1a:6cc7:e324:5597%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.0.1', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:283)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:184)
+	at app//org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:106)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:106)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:93)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:48)
+	at app//Start.start(Start.java:11)
+	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.15.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at app//org.testng.TestRunner.run(TestRunner.java:603)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1092)
+	at app//org.testng.TestNG.run(TestNG.java:1060)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:64089
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	... 53 more
+Caused by: java.net.ConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:64089
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:64089
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">start</td>
+<td class="failures">21.206s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 18 Jun 2022, 12:35:10</p>
+</div>
+</div>
+</body>
+</html>
